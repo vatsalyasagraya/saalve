@@ -1,0 +1,153 @@
+.nav{
+    display: block;
+    background-color: var(--main-color);
+    position: sticky;
+    width: 100%;
+    height: 3.75rem;
+}
+.nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+}
+.nav-menu{
+    display: flex;
+    margin-right: 1.4rem;
+    margin-left: 8rem;
+}
+.nav-logo{
+    position: absolute;
+    left: 0;    
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.nav a{
+    display: inline-block;
+    padding: 0.7rem 1rem;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    color: var(--main-font-color);
+    font-weight: 500;
+}
+.nav .buttons{
+    padding-top: 0.5rem;
+}
+.nav .buttons a:after {
+    content: '';
+    display: block;
+    margin: 0.5rem auto auto auto;
+    height: 3px;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+.nav a:hover:after {
+    width: 100%;
+    background: var(--main-font-color);
+}
+.nav a.active:after {
+    content: '';
+    display: block;
+    margin: 0.5rem auto auto auto;
+    height: 3px;
+    width: 100%;
+    background: var(--main-font-color);
+}
+.nav-toggle{
+    display: none;
+}
+.nav-icons{
+    position: absolute;
+    right: 1.4rem;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.nav-icon{
+    padding-top: 0.5rem;
+}
+
+@media screen and (width<=600px) {
+    .nav{
+        font-family: 'Montserrat', sans-serif;
+        display: block;
+        background-color: var(--main-color);
+        position: sticky;
+        top: 0;
+        width: 100%;
+        height: 3.75rem;
+    }
+    .nav ul{
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        margin: 0;
+        padding: 0;
+    }
+    .nav-toggle{
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: block;
+    }
+    .nav-toggle button{
+        border: none;
+        text-decoration: none;
+        background-color: rgba(0, 0, 0, 0);
+        color: var(--main-font-color);
+        font-size: 2rem;
+        padding: 0.8rem 1.5rem 0.8rem 0;
+    }
+    .nav-logo{
+        position: absolute;
+        left: 0;
+        font-size: 1.4rem;
+    }
+    .nav-menu a{
+        display: block;
+        text-align: center;
+        padding: 0.4rem 1.5rem;
+        margin: 0 ;
+        text-decoration: none;
+        color: var(--main-font-color);
+    }
+    .nav .buttons{
+        padding-top: 0;
+    }
+    .nav-menu{
+        position: absolute;
+        display: block;
+        top: 3.8rem;
+        float: right;
+        width: 9rem;
+        height: 9.7rem;
+        margin-right: 0rem;
+        background-color: var(--main-color);
+    }
+    .nav .visible{
+        visibility: hidden;
+    }
+    .nav .buttons:after {
+        content: '';
+        display: block;
+        height: 2px;
+        width: 0;
+        background: transparent;
+        transition: width .5s ease, background-color .5s ease;
+    }
+    .nav .buttons:hover:after {
+        width: 100%;
+        background: var(--main-font-color);
+    }
+    .nav .buttons a:after {
+        display: none;
+    }
+    .nav a.active:after {
+        display: none;
+    }
+    .nav-icons{
+        display: none;
+    }
+  }
