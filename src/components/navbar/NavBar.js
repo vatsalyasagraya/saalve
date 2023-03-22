@@ -1,4 +1,5 @@
 import React,{useState} from 'react';
+import {Link} from "react-router-dom";
 import './navbar.css';
 
 
@@ -18,38 +19,39 @@ function NavBar() {
                   </button></li>
             <div className={toggle? "nav-menu visible":"nav-menu" }>
               <li className="buttons">
-                <a href='#' 
+                <Link to='/meal' 
                   onClick={() => {setActive(prev => {return {meal: true, grocery: false, bakery: false, partner: false}});setToggle(!toggle)}}
-                  className={active.meal? "active": "" }>Meal</a>
+                  className={active.meal? "active": "" }>Meal</Link>
               </li>
               <li className="buttons">
-                <a href="#" 
+                <Link to='/grocery'
                   onClick={() => {setActive(prev => {return {meal: false, grocery: true, bakery: false, partner: false}});setToggle(!toggle)}} 
-                  className={active.grocery? "active": "" }>Grocery</a>
+                  className={active.grocery? "active": "" }>Grocery</Link>
               </li>
               <li className="buttons">
-                <a href="#" 
+                <Link to='/bakery'
                   onClick={() => {setActive(prev => {return {meal: false, grocery: false, bakery: true, partner: false}});setToggle(!toggle)}} 
-                  className={active.bakery? "active": "" }>Bakery</a>
+                  className={active.bakery? "active": "" }>Bakery</Link>
               </li>
               <li className="buttons">
-                <a href="#" 
+                <Link to='/partnerwithus'
                   onClick={() => {setActive(prev => {return {meal: false, grocery: false, bakery: false, partner: true}});setToggle(!toggle)}} 
-                  className={active.partner? "active": "" }>Partner with us</a>
+                  className={active.partner? "active": "" }>Partner with us</Link>
               </li>
             </div>
             <div className="nav-icons">
               <li className="nav-icon">
-                <a href='#' ><span className="material-icons">favorite</span></a>
+                <Link to='/favorite' onClick={() => {setActive(prev => {return {meal: false, grocery: false, bakery: false, partner: false}})}}><span className="material-icons">favorite</span></Link>
               </li>
               <li className="nav-icon">
-                <a href="#" ><span className="material-icons">notifications</span></a>
+                <span className="material-icons">notifications</span>
+                <div className='counter'>2</div>
               </li>
               <li className="nav-icon">
-                <a href="#" ><span className="material-icons">shopping_cart</span></a>
+                <Link to='/cart' onClick={() => {setActive(prev => {return {meal: false, grocery: false, bakery: false, partner: false}})}}><span className="material-icons">shopping_cart</span></Link>
               </li>
               <li className="nav-icon">
-                <a href="#" ><span className="material-icons">face</span></a>
+                <Link to='/account' onClick={() => {setActive(prev => {return {meal: false, grocery: false, bakery: false, partner: false}})}}><span className="material-icons">face</span></Link>
               </li>
             </div>
         </ul>
