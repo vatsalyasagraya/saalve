@@ -1,7 +1,6 @@
 import React from 'react';
-import { ReactDOM } from 'react';
 import './foodcomp.css';
-import img1 from './images/1.jpg'
+import img1 from '../images/1.jpg'
 
 function FoodComp() {
     return (

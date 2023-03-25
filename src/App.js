@@ -12,7 +12,8 @@ import Partner from "./components/partner/Partner";
 import Favorite from "./components/favorite/Favorite";
 import Cart from "./components/cart/Cart";
 import Account from "./components/account/Account";
-import FoodComp from "./components/FoodComp";
+import FoodComp from "./components/foodcomp/FoodComp";
+import Carousel from "./components/carousel/Carousel";
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
       <NavBar/>
         <Routes>
             <Route exact path="/meal" element={<Meal/>}/>
+        </Routes>
+        <Carousel/>
+        <Routes>
             <Route exact path="/grocery" element={<Grocery/>}/>
             <Route exact path="/bakery" element={<Bakery/>}/>
             <Route exact path="/partnerwithus" element={<Partner/>}/>
