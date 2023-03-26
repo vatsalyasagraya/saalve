@@ -14,6 +14,8 @@ import Cart from "./components/cart/Cart";
 import Account from "./components/account/Account";
 import FoodComp from "./components/foodcomp/FoodComp";
 import Carousel from "./components/carousel/Carousel";
+import LoggIn from "./components/login/loggin";
+
 
 function App() {
   return (
@@ -37,6 +39,7 @@ function App() {
             <Route exact path="/account" element={<Account/>}/>
         </Routes>
         <FoodComp/>
+        <LoggIn/>
       </Router>
     </>
   );
