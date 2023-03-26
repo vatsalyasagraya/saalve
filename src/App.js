@@ -24,6 +24,10 @@ function App() {
             <Route exact path="/meal" element={<Meal/>}/>
         </Routes>
         <Carousel/>
+
+
+
+        
         <Routes>
             <Route exact path="/grocery" element={<Grocery/>}/>
             <Route exact path="/bakery" element={<Bakery/>}/>
