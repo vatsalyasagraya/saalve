@@ -20,7 +20,7 @@ import LoggIn from "./components/login/loggin";
 function App() {
   return (
     <>
-    <Router>
+    {/* <Router>
       <NavBar/>
         <Routes>
             <Route exact path="/meal" element={<Meal/>}/>
@@ -39,8 +39,9 @@ function App() {
             <Route exact path="/account" element={<Account/>}/>
         </Routes>
         <FoodComp/>
-        <LoggIn/>
-      </Router>
+        
+      </Router> */}
+      <LoggIn/>
     </>
   );
 }
