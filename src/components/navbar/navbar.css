@@ -98,6 +98,26 @@
     top: 15px;
     right: 15px;
 }
+.nav-notifications{
+    width: 15rem;
+    height: 20rem;
+    border-radius: 1rem;
+    background-color: var(--main-color);
+    position: absolute;
+    top: 3.9rem;
+    right: -5rem;
+    z-index: 100;
+    overflow-y: scroll;
+    padding: 1rem;
+    color: var(--main-font-color);
+}
+.nav-notifications ul{
+    display: grid;
+    gap: 0.5rem;
+}
+.invisible{
+    display: none;
+}
 @media screen and (width<=600px) {
     .nav{
         font-family: 'Montserrat', sans-serif;

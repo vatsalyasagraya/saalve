@@ -6,6 +6,8 @@ import './navbar.css';
 function NavBar() {
   const [active,setActive] = useState({meal: false, grocery: false, bakery: false, partner: false});
   const [toggle,setToggle] = useState(true);
+  const [notifications,setNotifications] = useState(false);
+  
   
   
     return (
@@ -44,8 +46,20 @@ function NavBar() {
                 <Link to='/favorite' onClick={() => {setActive(prev => {return {meal: false, grocery: false, bakery: false, partner: false}})}}><span className="material-icons">favorite</span></Link>
               </li>
               <li className="nav-icon">
-                <span className="material-icons">notifications</span>
+                <span className="material-icons" onClick={() => setNotifications(!notifications)}>notifications</span>
                 <div className='counter'>2</div>
+                <div className={notifications?"nav-notifications":"invisible"}>
+                  <ul className='nav-notification-list'>
+                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, nesciunt.</li><hr/>
+                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, nesciunt.</li><hr/>
+                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, nesciunt.</li><hr/>
+                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, nesciunt.</li><hr/>
+                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, nesciunt.</li><hr/>
+                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, nesciunt.</li><hr/>
+                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, nesciunt.</li><hr/>
+                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, nesciunt.</li><hr/>
+                  </ul>
+                </div>
               </li>
               <li className="nav-icon">
                 <Link to='/cart' onClick={() => {setActive(prev => {return {meal: false, grocery: false, bakery: false, partner: false}})}}><span className="material-icons">shopping_cart</span></Link>

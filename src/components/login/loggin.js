@@ -1,29 +1,27 @@
 import React from 'react';
 import './LoggIn.css';
 import signpic from '../images/112.avif'
-import backimg from '../images/34.jpg'
 
 
 function loggin() {
     return (
         <section>
-            <div className="container">
+            <div className="login-container">
                 <div className="signup-content">
                     <div className="signup-form">
-                        <h2 className='heading'>Sign Up</h2>
+                        <h2 className='login-heading'>Sign Up</h2>
                         <form className='register-form' id='register-form'>
                             <div className="formgroup">
                                 <label htmlFor="name">
                                     <span className="material-icons">person</span>
                                 </label>
-                                <input type="text" placeholder='name' name="name" id='name' autoComplete='off' />
+                                <input type="text" placeholder='Name' name="name" id='name' autoComplete='off' />
                             </div>
                             <div className="formgroup">
-
                                 <label htmlFor="email">
                                     <span className="material-icons">email</span>
                                 </label>
-                                <input type="text" placeholder='email' name="email" id='email' autoComplete='off' />
+                                <input type="text" placeholder='Email' name="email" id='email' autoComplete='off' />
                             </div>
                             <div className="formgroup">
                                 <label htmlFor="phone">
@@ -35,13 +33,13 @@ function loggin() {
                                 <label htmlFor="password">
                                     <span className="material-icons">key</span>
                                 </label>
-                                <input type="text" placeholder='password' name="password" id='password' autoComplete='off' />
+                                <input type="text" placeholder='Password' name="password" id='password' autoComplete='off' />
                             </div>
                             <div className="formgroup">
                                 <label htmlFor="cpassword">
                                     <span className="material-icons">lock</span>
                                 </label>
-                                <input type="text" placeholder='cpassword' name="cpassword" id='cpassword' autoComplete='off' />
+                                <input type="text" placeholder='Confirm Password' name="cpassword" id='cpassword' autoComplete='off' />
                             </div>
                             <button className='form-button'>Register</button>
                         </form>

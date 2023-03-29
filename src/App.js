@@ -20,16 +20,12 @@ import LoggIn from "./components/login/loggin";
 function App() {
   return (
     <>
-    {/* <Router>
+    <Router>
       <NavBar/>
         <Routes>
             <Route exact path="/meal" element={<Meal/>}/>
         </Routes>
-        <Carousel/>
-
-
-
-        
+        {/* <Carousel/>         */}
         <Routes>
             <Route exact path="/grocery" element={<Grocery/>}/>
             <Route exact path="/bakery" element={<Bakery/>}/>
@@ -40,7 +36,7 @@ function App() {
         </Routes>
         <FoodComp/>
         
-      </Router> */}
+      </Router>
       <LoggIn/>
     </>
   );
