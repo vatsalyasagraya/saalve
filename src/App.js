@@ -15,17 +15,18 @@ import Account from "./components/account/Account";
 import FoodComp from "./components/foodcomp/FoodComp";
 import Carousel from "./components/carousel/Carousel";
 import LoggIn from "./components/login/loggin";
+import Home from "./components/home/Home";
 
 
 function App() {
   return (
     <>
     <Router>
-      {/* <NavBar/> */}
-        {/* <Routes>
+      <NavBar/>
+        <Routes>
             <Route exact path="/meal" element={<Meal/>}/>
         </Routes>
-        <Carousel/>        
+        {/* <Carousel/>         */}
         <Routes>
             <Route exact path="/grocery" element={<Grocery/>}/>
             <Route exact path="/bakery" element={<Bakery/>}/>
@@ -33,11 +34,11 @@ function App() {
             <Route exact path="/favorite" element={<Favorite/>}/>
             <Route exact path="/cart" element={<Cart/>}/>
             <Route exact path="/account" element={<Account/>}/>
-        </Routes> */}
+        </Routes>
         <FoodComp/>
         
       </Router>
-      {/* <LoggIn/> */}
+      <LoggIn/>
     </>
   );
 }

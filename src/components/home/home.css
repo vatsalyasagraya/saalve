@@ -1,0 +1,9 @@
+.home-container{
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.home-container img{
+    width: 100vw;
+    height: 50%;
+}
