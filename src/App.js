@@ -21,24 +21,24 @@ import Home from "./components/home/Home";
 function App() {
   return (
     <>
-    <Router>
-      <NavBar/>
+    <Router>  
+        <NavBar />
         <Routes>
-            <Route exact path="/meal" element={<Meal/>}/>
+          <Route exact path="/" element={<Home/>}/>
         </Routes>
-        {/* <Carousel/>         */}
+        <Carousel/>
         <Routes>
-            <Route exact path="/grocery" element={<Grocery/>}/>
-            <Route exact path="/bakery" element={<Bakery/>}/>
-            <Route exact path="/partnerwithus" element={<Partner/>}/>
-            <Route exact path="/favorite" element={<Favorite/>}/>
-            <Route exact path="/cart" element={<Cart/>}/>
-            <Route exact path="/account" element={<Account/>}/>
+          <Route exact path="/meal" element={<Meal/>}/>
+          <Route exact path="/grocery" element={<Grocery/>}/>
+          <Route exact path="/bakery" element={<Bakery/>}/>
+          <Route exact path="/partnerwithus" element={<Partner/>}/>
+          <Route exact path="/favorite" element={<Favorite/>}/>
+          <Route exact path="/cart" element={<Cart/>}/>
+          <Route exact path="/account" element={<Account/>}/>
         </Routes>
-        <FoodComp/>
-        
+        {/* <FoodComp/> */}
+        {/* <LoggIn/> */}
       </Router>
-      <LoggIn/>
     </>
   );
 }

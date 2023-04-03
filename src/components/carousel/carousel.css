@@ -15,7 +15,7 @@
     width: 0px;
     background: rgba(255, 255, 255, 0);
   }
-.pre-btn,.next-btn{
+ .pre-food-btn,.next-food-btn{
     position: absolute;
     top: 10rem;
     font-size: 20px;
@@ -33,9 +33,9 @@
 .pre-btn:hover, .next-btn:hover{
     background-color: rgb(236, 236, 236);
 }
-.pre-btn{
+.pre-food-btn{
     left: 1rem;
 }
-.next-btn{
+.next-food-btn{
     right: 1rem;
 }
