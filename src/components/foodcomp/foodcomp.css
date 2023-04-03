@@ -1,10 +1,12 @@
 body{
-    background-color: aquamarine;
+    background-color: rgb(0, 0, 0);
 }
 .who .foodpage{
     background-color: white;
-    margin: 70px;
+    margin: 20px;
+    background-color: rgb(114, 96, 96);
     padding: 30px;   
+    border: 2px solid red;
     display: flex;
     align-items:center;
     justify-content: space-between;
