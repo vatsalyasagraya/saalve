@@ -16,11 +16,15 @@ import FoodComp from "./components/foodcomp/FoodComp";
 import Carousel from "./components/carousel/Carousel";
 import LoggIn from "./components/login/loggin";
 import Home from "./components/home/Home";
+import Profile from "./components/profile/Profile"
+import Footer from "./components/footer/Footer";
+import NewsLetter from "./components/newsletter/NewsLetter";
 
 
 function App() {
   return (
     <>
+
     <Router>  
         <NavBar />
         <Routes>
