@@ -17,7 +17,7 @@ export default function Carousel() {
 
   return (
     <div className='food-carousel'>
-        <button className='pre-btn' onClick={prev}><span className="material-icons">navigate_before</span></button>
+        <button className='pre-food-btn' onClick={prev}><span className="material-icons">navigate_before</span></button>
         <div className="product-container" ref={pro}>
             <MyCard cardno='1'/>
             <MyCard cardno='2'/>
@@ -33,7 +33,7 @@ export default function Carousel() {
             <MyCard cardno='12'/>
             <MyCard cardno='13'/>
         </div>
-        <button className='next-btn'onClick={next}><span className="material-icons">navigate_next</span></button>
+        <button className='next-food-btn'onClick={next}><span className="material-icons">navigate_next</span></button>
 
     </div>
   )

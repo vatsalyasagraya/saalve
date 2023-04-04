@@ -1,0 +1,36 @@
+.food-cart{
+    margin: 1rem;
+    padding: 1rem;
+    background-color: white;
+    position: relative;
+}
+.food-cart h1{
+    font-weight: 500;
+    font-size: 1.9rem; 
+    margin-bottom: 10px;   
+}
+.food-cart a{
+    text-decoration: none;
+    color: var(--main-color);
+}
+.food-cart .cart-price{
+    display: flex;
+    justify-content: space-between;
+}
+.food-cart .cart-order{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+.food-cart .cart-order button{
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    color: var(--main-font-color);
+    font-size: 1rem;
+    cursor: pointer;
+}
+.food-cart .cart-order button:hover{
+    background-color: #58c54c;
+}

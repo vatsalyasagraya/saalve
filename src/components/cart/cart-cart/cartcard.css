@@ -1,0 +1,23 @@
+.cart-card{
+    display: flex;
+    gap: 2rem;
+    margin: 1rem 0 ;
+    
+}
+.cart-card img{
+    width: 12%;
+    min-width: 130px;
+}
+.cart-card .card-text{
+    display: grid;
+    width: 100%; 
+}
+.cart-card .card-text .card-heading{
+    display: flex;
+    justify-content: space-between;
+}
+.card-text .cart-qty{
+    display: flex;
+    gap: 1rem;
+    height: 1.5rem;
+}
