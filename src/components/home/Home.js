@@ -7,6 +7,8 @@ import kanha from "../images/kanha.png"
 import mcd from "../images/mcd.png"
 import bs from "../images/bs.png"
 import behroz from "../images/behroz.jpg"
+import Footer from '../footer/Footer'
+import { Link } from 'react-router-dom'
 
 
 function Home() {
@@ -48,9 +50,8 @@ function Home() {
             <img src={bs} alt="bs" />
             <img src={mcd} alt="McD" />
             <img src={behroz} alt="behroz" />
+        <Link to='/meal' className='home-link'>Explore More</Link>
         </div>
-        <a href="#" className='home-link'>Explore More</a>
-
 
         </>
     )

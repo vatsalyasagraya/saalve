@@ -1,6 +1,7 @@
 import React,{useRef} from 'react'
 import MyCard from '../mycard/MyCard'
 import './carousel.css'
+import { Link } from 'react-router-dom';
 
 
 

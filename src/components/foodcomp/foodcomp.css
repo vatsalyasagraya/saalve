@@ -1,40 +1,67 @@
-body{
-    background-color: rgb(0, 0, 0);
-}
-.who .foodpage{
+.food-page{
     background-color: white;
-    margin: 20px;
-    background-color: rgb(114, 96, 96);
-    padding: 30px;   
-    border: 2px solid red;
     display: flex;
+    flex-wrap: wrap;
     align-items:center;
     justify-content: space-between;
 }
+.food-page img{
+    max-width: 550px;
+    min-width: 100px;
+    margin: 2rem 2rem;
+}
 .leftsec{
+    width: 500px;
     display: flex;
     flex-direction: column;
-    margin: 30px;
+    gap: 0.8rem;
+    margin: 2rem;
 }
-
-.view{
+.leftsec .top-section{
     display: flex;
-    margin: 13px;
-    font-weight: 200;
+    justify-content: space-between;
 }
-.view p{
-    /* padding: 10px; */
-    margin: 7px;
-    border: 1px solid rgb(255, 88, 88);
-    padding:6px;
-    font-weight: 500;
-    /* width: 100%; */
+.food-page .favorite{
+    color: red;
+    cursor: pointer; 
+}
+.food-page .favorite_border{
+    cursor: pointer;    
+}
+.leftsec .top-section-headings{
+    display: flex;
+    justify-content: space-between;
+}
+.leftsec .span0{
+    position: relative;
+    bottom: 5px;
+    right: 4px;
+}
+.leftsec .span1{
+    position: relative;
+    bottom: 5px;
+    left: 4px;
+}
+.leftsec .pickup-time{
+    display: flex;
+    justify-content: space-between;
+}
+.leftsec .order{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+.leftsec .order button{
+    background-color: var(--main-color);
+    padding: 10px 30px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5);
+}
+.leftsec .order button:hover{
+    background-color: rgb(2, 147, 2);
 }
 
-.img-count h6{
-    font-size: medium;
-    font-weight: 700;
-    margin: 30px;
-
-}
 
