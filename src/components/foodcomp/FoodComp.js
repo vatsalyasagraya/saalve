@@ -3,6 +3,7 @@ import { useState } from 'react';
 import './foodcomp.css';
 import img1 from '../images/3.jpg'
 import Search from '../search/Search';
+import Carousel from '../carousel/Carousel';
 
 function FoodComp() {
     const[like,setLike] = useState(false);
@@ -52,6 +53,10 @@ function FoodComp() {
                         <img src={img1} alt="Not found"/>
                     </div>
             </div>
+            <h2 className='meal-heading'>Recommended Surprise Grocery Bags</h2>
+            <Carousel/>
+            <h2 className='meal-heading'>Recommended Surprise Bakery Bags</h2>
+            <Carousel/>
         </>
     )
 }

@@ -54,10 +54,6 @@ function NavBar() {
                     <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, nesciunt.</li><hr/>
                     <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, nesciunt.</li><hr/>
                     <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, nesciunt.</li><hr/>
-                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, nesciunt.</li><hr/>
-                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, nesciunt.</li><hr/>
-                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, nesciunt.</li><hr/>
-                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, nesciunt.</li><hr/>
                   </ul>
                 </div>
               </li>
