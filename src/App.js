@@ -19,28 +19,34 @@ import Home from "./components/home/Home";
 import Profile from "./components/profile/Profile"
 import Footer from "./components/footer/Footer";
 import NewsLetter from "./components/newsletter/NewsLetter";
+import SignInPage from "./components/login/signup";
 
 
 function App() {
   return (
     <>
-
     <Router>  
         <NavBar />
-        {/* <LoggIn/> */}
         <Routes>
           <Route exact path="/" element={<Home/>}/>
+        </Routes>
+        {/* <Carousel/> */}
+        <Routes>
           <Route exact path="/meal" element={<Meal/>}/>
           <Route exact path="/grocery" element={<Grocery/>}/>
           <Route exact path="/bakery" element={<Bakery/>}/>
           <Route exact path="/partnerwithus" element={<NewsLetter/>}/>
           <Route exact path="/favorite" element={<Favorite/>}/>
           <Route exact path="/cart" element={<Cart/>}/>
-          <Route exact path="/account" element={<Profile/>}/>
-          <Route exact path="/food-component" element={<FoodComp/>}/>
+          <Route exact path="/account" element={<Account/>}/>
         </Routes>
-        <Footer/>
+        {/* <FoodComp/> */}
+        {/* <LoggIn/> */}
       </Router>
+
+      {/* <Partner/>
+      <Profile/>
+      <Footer/> */}
     </>
   );
 }
