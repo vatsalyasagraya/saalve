@@ -1,31 +1,35 @@
 import React from 'react'
+import Carousel from '../carousel/Carousel'
+import Search from '../search/Search'
+import MyCard from '../mycard/MyCard'
+import './meal.css'
 
 export default function Meal() {
   return (
-    <div>
-      <div className='meal-header'>
-        <div>
-          <select name="location">
-            <option value="" disabled selected hidden>Jaipur</option>
-            <option value="">Delhi</option>
-            <option value="">Mumbai</option>
-          </select>
-          <input type="text" name='write' placeholder="Search by restaurant or store"/>
-          <select name="filter">
-            <option value="" disabled selected>Filter</option>
-            <option value="">Veg</option>
-            <option value="">Thali</option>
-            <option value="">Sweets</option>
-          </select>
-          <button>Search</button>
-        </div>
-        <div>
-          <label><input type="checkbox" />Pure Veg</label>
-          <label><input type="checkbox" />Pure Vegan</label>
-          <label><input type="checkbox" />Now Open</label>
+    <>
+      <Search/>
+      <h2 className='meal-heading'>Surprise Thali in Jaipur</h2>
+      <div className="meal">
+        <div className='meal-grid'>
+          <MyCard cardno='1'/>
+          <MyCard cardno='2'/>
+          <MyCard cardno='3'/>
+          <MyCard cardno='4'/>
+          <MyCard cardno='5'/>
+          <MyCard cardno='6'/>
+          <MyCard cardno='7'/>
+          <MyCard cardno='8'/>
+          <MyCard cardno='9'/>
+          <MyCard cardno='10'/>
+          <MyCard cardno='11'/>
+          <MyCard cardno='12'/>
+          <MyCard cardno='13'/>
         </div>
       </div>
-
-    </div>
+      <h2 className='meal-heading'>Recommended Surprise Grocery Bags</h2>
+      <Carousel/>
+      <h2 className='meal-heading'>Recommended Surprise Bakery Bags</h2>
+      <Carousel/>
+    </>
   )
 }

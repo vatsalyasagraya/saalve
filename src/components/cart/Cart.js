@@ -1,11 +1,14 @@
 import React from 'react'
 import "./cart.css"
-import CartCard from './cart-cart/CartCard'
+import CartCard from './cart-card/CartCard'
+import Search from '../search/Search'
 
 
 
 export default function Cart() {
   return (
+    <>
+    <Search/>
     <div className='cart'>
       <div className="food-cart">
         <h1 >Food Cart</h1>
@@ -22,5 +25,6 @@ export default function Cart() {
         </div>
       </div>
     </div>
+    </>
   )
 }

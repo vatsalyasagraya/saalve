@@ -27,21 +27,19 @@ function App() {
 
     <Router>  
         <NavBar />
+        {/* <LoggIn/> */}
         <Routes>
           <Route exact path="/" element={<Home/>}/>
-        </Routes>
-        {/* <Carousel/> */}
-        <Routes>
           <Route exact path="/meal" element={<Meal/>}/>
           <Route exact path="/grocery" element={<Grocery/>}/>
           <Route exact path="/bakery" element={<Bakery/>}/>
-          <Route exact path="/partnerwithus" element={<Partner/>}/>
+          <Route exact path="/partnerwithus" element={<NewsLetter/>}/>
           <Route exact path="/favorite" element={<Favorite/>}/>
           <Route exact path="/cart" element={<Cart/>}/>
-          <Route exact path="/account" element={<Account/>}/>
+          <Route exact path="/account" element={<Profile/>}/>
+          <Route exact path="/food-component" element={<FoodComp/>}/>
         </Routes>
-        {/* <FoodComp/> */}
-        {/* <LoggIn/> */}
+        <Footer/>
       </Router>
     </>
   );

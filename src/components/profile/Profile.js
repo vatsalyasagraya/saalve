@@ -1,6 +1,7 @@
 import React from 'react';
 import profilec from '../images/profile.png';
 import './profile.css'
+import Footer from '../footer/Footer';
 
 function Profile() {
   return (
@@ -43,7 +44,6 @@ function Profile() {
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore beatae ipsam adipisci dolor tempora facilis omnis libero, corrupti similique, quia eos. Ullam non maiores dolores nisi quam vero asperiores unde?</p>
           </div>
         </div>
-
       </div>
     </div>
   )

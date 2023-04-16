@@ -24,13 +24,13 @@
 }
 .food-cart .cart-order button{
     background-color: var(--main-color);
-    border: none;
-    border-radius: 10px;
-    padding: 0.5rem 1rem;
-    color: var(--main-font-color);
-    font-size: 1rem;
+    padding: 10px 30px;
+    color: white;
     cursor: pointer;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5); 
 }
 .food-cart .cart-order button:hover{
-    background-color: #58c54c;
+    background-color: rgb(2, 147, 2);
 }
