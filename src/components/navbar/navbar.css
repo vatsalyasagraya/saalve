@@ -121,21 +121,20 @@
 .invisible{
     display: none;
 }
-.nav button{
+.nav .signin a{
     background-color: var(--main-font-color);
     padding: 10px 30px;
-    margin: 0.8rem 1rem;
+    margin: 1rem;
     cursor: pointer;
     border: none;
     border-radius: 2px;
     box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5); 
-}
-.nav button:hover{
-    background-color: rgb(232, 232, 232)
-}
-.nav button a{
     text-decoration: none;
     color: var(--main-color);
+    
+}
+.nav .signin a:hover{
+    background-color: rgb(232, 232, 232)
 }
 @media screen and (width<=600px) {
     .nav{

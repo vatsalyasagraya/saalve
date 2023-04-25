@@ -60,7 +60,7 @@ function loggin() {
         SetSubmitButtonDisabled(true);
         createUserWithEmailAndPassword(auth, values.email, values.pass).then(
             async (res) => {
-                console.log(res);
+                // console.log(res);
                 SetSubmitButtonDisabled(false);
                 const user = res.user;
                 await updateProfile(user, {
@@ -69,7 +69,7 @@ function loggin() {
                 await updateProfile(user,{
                     photoURL: values.phoneno,
                 })
-                navigate("/");
+                navigate("/login");
 
             })
             .catch((err) => {
@@ -110,10 +110,10 @@ function loggin() {
                                      />
                             </div>
                             <div className="formgroup">
-                                <label htmlFor="phone">
+                                <label htmlFor="Phone">
                                     <span className="material-icons">phone</span>
                                 </label>
-                                <input type="text" placeholder='phone' name="phone" id='phone' autoComplete='off'
+                                <input type="text" placeholder='Phone' name="phone" id='phone' autoComplete='off'
                                 // onChange={(e)=>Setphoneno(e.target.value)}
                                     onChange={(event) =>
                                         Setvalues((prev) => ({ ...prev, phoneno: event.target.value }))
@@ -148,9 +148,9 @@ function loggin() {
                                 // onClick={signIN}
                                 onClick={handleSubmission} disabled={SubmitButtonDisabled}
                                 >Register</button>
-                                <b className='errorr'>{errormsg}</b>
-                                <p><Link to="/login">Log In</Link>.</p>
+                                <Link to="/login">Log In</Link>
                             </div>
+                                <b className='errorr' style={{marginLeft:"1rem"}}>{errormsg}</b>
                         </div>
                     </div>
                     <div className="signup-image">

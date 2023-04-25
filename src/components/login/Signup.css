@@ -5,14 +5,13 @@
     font-family: "Roboto", sans-serif
 }
 .sign-up {
-    margin: 0 auto;
+    margin: 0 ;
     background-image: url('../images/back.jpg');
     background-repeat: no-repeat;
+    background-size: 100%;
 }
 
-.m-5-auto {
-    margin: 5rem auto;
-}
+
 
 .primary-button {
     margin-top: 5rem;

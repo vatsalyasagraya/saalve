@@ -59,9 +59,9 @@ function NavBar(props) {
               </li> */}
               
                 {(!props.loginVar)?
-                <div>
-                  <button><Link to="/signinpage">Sign-up</Link></button>
-                  <button><Link to="/login">Log-in</Link></button>
+                <div className='signin' style={{marginTop:"1.1rem"}}>
+                  <Link to="/signinpage">Sign-up</Link>
+                  <Link to="/login">Log-in</Link>
                 </div>:
                <> <li className="nav-icon">
                 <Link to='/cart' onClick={() => {setActive(prev => {return {meal: false, grocery: false, bakery: false, partner: false}})}}><span className="material-icons">shopping_cart</span></Link>
