@@ -116,6 +116,7 @@ function App() {
           <Route exact path="termsandconditions" element={<Termscodn/>}/>
           <Route exact path="bill" element={<MainBill cartItems={cartItems}/>}/>
           <Route path="food-component/:type/:index" element={<FoodComp loginVar={logginn} handleAddCartItem={handleAddCartItem}/>}/>
+          <Route path="/*" element={<Home/>}/>
         </Routes>
         <Footer/>
       </Router>
