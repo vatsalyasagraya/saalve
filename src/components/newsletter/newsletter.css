@@ -42,14 +42,15 @@
     border-radius: 4px;
     outline: none;
 }
-#newsletter button:hover{
+#newsletter a:hover{
     background-color: rgb(2, 147, 2);
 }
-#newsletter button{
+#newsletter a{
     background-color: var(--main-color);
-    padding: 10px 30px;
+    padding: 15px 30px;
     color: white;
     cursor: pointer;
+    text-decoration: none;
     border: none;
     border-radius: 2px;
     box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5);

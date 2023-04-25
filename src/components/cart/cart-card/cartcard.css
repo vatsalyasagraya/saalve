@@ -7,6 +7,7 @@
 .cart-card img{
     width: 12%;
     min-width: 130px;
+    min-height: 100px;
 }
 .cart-card .card-text{
     display: grid;
@@ -20,4 +21,17 @@
     display: flex;
     gap: 1rem;
     height: 1.5rem;
+}
+.cart-qty button{
+    background-color: var(--main-color);
+    font-size: 1.2rem;
+    padding: 0px 10px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.5);
+}
+.cart-qty button:hover{
+    background-color: rgb(2, 147, 2);
 }

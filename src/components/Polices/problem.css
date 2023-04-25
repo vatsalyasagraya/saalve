@@ -1,0 +1,101 @@
+.problem{
+    padding: 5rem 0;
+    background-color: rgb(244, 244, 244);
+}
+.problem.box{
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    padding: 80px 0px;
+    
+    margin: 5px 0px;
+}
+.problem.ind{
+    width: 60%;
+    height: 60% ;
+}
+.problem.box1{
+    width: 50%;
+    padding-left: 7%;
+}
+.problem.box1 span{
+    font-size: 2.2rem;
+    font-weight: 100;
+    color: black;
+}
+.problem.box1 b{
+    color: #4DA943;
+}
+.problem.main{
+    margin-bottom: 40px;
+    /* padding-left: 40px; */
+}
+.problem.para
+{
+    color: rgb(86, 86, 86);
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 980px) {
+    .problem{
+        padding: 5rem 0 0rem 0;
+        background-color: rgb(244, 244, 244);
+    }
+   .problem h1{ 
+        padding-top: 4rem;
+        font-size: 4rem;
+        font-weight: 600;
+    }   
+    .problem hr{
+        background-color: #4DA943;
+        width: 10%;
+        height: 0.5rem;
+        border-radius: 2rem;
+        position: absolute;
+        left: 45%;
+        margin: 1rem 0;
+    }  
+    .problem{
+        height: 55vh;
+        display: block;
+        align-items: center;
+    }
+    .problem.box{
+        display: block;
+    }
+    .problem.ind{
+        width: 0%;
+        height: 0;
+        padding: 0%;
+        margin: 0;
+        visibility: hidden;
+    }
+
+    .problem.box1 span{
+        font-size: 3.5rem;
+        font-weight: 100;
+        width: 80%;
+        text-align: left;
+        font-weight: 300;
+        color: black;
+    }
+    .problem.box1 b{
+        color: #4DA943;
+    }
+    .problem.main{
+        margin-bottom: 40px;
+    }
+    .problem.para
+    {
+        color: gray;
+        width: 80%;
+        font-size: 2.5rem;
+        text-align: left;
+        font-weight: 200;
+        display: block;
+        position: absolute;
+        left: 10%;
+        /* top: 20% */
+    }
+}

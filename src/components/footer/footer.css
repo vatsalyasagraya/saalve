@@ -48,7 +48,10 @@ footer .install .row img{
     border-radius: 6px;
 
 }
-
+footer .icon{
+    display: flex;
+    gap: 8px
+}
 footer .install img{
     margin: 10px 0 15px 0;
 }

@@ -2,26 +2,34 @@ import React from 'react'
 import "./cart.css"
 import CartCard from './cart-card/CartCard'
 import Search from '../search/Search'
+import { Link } from 'react-router-dom';
 
-
-
-export default function Cart() {
+export default function Cart({cartItems,handleDeleteAllCart,handleAddCartItem,handleDeleteCartItem,handleDecreaseCartItem}) {
+  var money=0;
+  function createCartCard(datas){
+    money+=datas.price*datas.quantity;
+    return(
+        <CartCard name={datas.name} image={datas.image} price={datas.price} location={datas.location} quantity={datas.quantity} handleAddCartItem={handleAddCartItem} handleDeleteCartItem={handleDeleteCartItem} handleDecreaseCartItem={handleDecreaseCartItem}/>
+      
+        );
+  }
   return (
     <>
-    <Search/>
+    {/* <Search/> */}
     <div className='cart'>
       <div className="food-cart">
         <h1 >Food Cart</h1>
         <div className="cart-price">
-          <a href="#">Delete all</a>
+          <a onClick={handleDeleteAllCart}>Delete all</a>
           <span class Name='cart-price'>Price</span>
         </div>
         <hr />
-        <CartCard/>
-        <CartCard/>
+        {cartItems.map(createCartCard)}
         <div className="cart-order">
-          <button>Proceed to Buy</button>
-          <h3 className='subtotal'>Subtotal (2 items):   $ 1,147.00</h3>
+        <Link className='button' to="/bill" style={{color:"white",paddingTop:"10px"}}>Proceed to Buy</Link>
+          <div><h4 className='subtotal'>Tax (5%) :   &#x20B9; {0.05*money}</h4>
+          <h3 className='subtotal'>Subtotal :   &#x20B9; {1.05*money}</h3>
+        </div>
         </div>
       </div>
     </div>

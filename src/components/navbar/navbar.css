@@ -1,3 +1,4 @@
+
 .nav{
     display: block;
     background-color: var(--main-color);
@@ -16,19 +17,20 @@
 .nav-menu{
     display: flex;
     margin-right: 1.4rem;
-    margin-left: 8rem;
+    margin-left: 1.5rem;
 }
 .nav-logo{
-    position: absolute;
-    left: 0;    
-    font-size: 1.4rem;
-    font-weight: 500;
+    color: #ffffff;
+    align-items: center;
+    cursor: pointer;
     text-decoration: none;
-    color: var(--main-font-color);
-    padding: 0.7rem 1rem;
-    margin: 0 0.5rem;
+    font-size: 1.8rem;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 600;
+    margin: 0.9rem 0 0.8rem 2rem;
     display: inline-block;
 }
+
 .nav-menu a{
     display: inline-block;
     padding: 0.7rem 1rem;

@@ -1,9 +1,10 @@
 import React,{useState} from 'react';
 import {Link} from "react-router-dom";
 import './navbar.css';
+import logo from '../images/logo1-removebg-preview.png'
 
 
-function NavBar() {
+function NavBar(props) {
   const [active,setActive] = useState({meal: false, grocery: false, bakery: false, partner: false});
   const [toggle,setToggle] = useState(true);
   const [notifications,setNotifications] = useState(false);
@@ -13,7 +14,7 @@ function NavBar() {
     return (
       <nav className="nav">
         <ul className="nav-list">
-            <li><a href="/" className="nav-logo">logo</a></li>
+            <li><a href="/" className="nav-logo">SAALVE</a></li>
             <li className="nav-toggle">
               <button  
                 onClick={() => setToggle(!toggle)}>
@@ -30,22 +31,22 @@ function NavBar() {
                   onClick={() => {setActive(prev => {return {meal: false, grocery: true, bakery: false, partner: false}});setToggle(!toggle)}} 
                   className={active.grocery? "active": "" }>Grocery</Link>
               </li>
-              <li className="buttons">
+              {/* <li className="buttons">
                 <Link to='/bakery'
                   onClick={() => {setActive(prev => {return {meal: false, grocery: false, bakery: true, partner: false}});setToggle(!toggle)}} 
                   className={active.bakery? "active": "" }>Bakery</Link>
-              </li>
+              </li> */}
               <li className="buttons">
-                <Link to='/partnerwithus'
+                <Link to='/contactus'
                   onClick={() => {setActive(prev => {return {meal: false, grocery: false, bakery: false, partner: true}});setToggle(!toggle)}} 
-                  className={active.partner? "active": "" }>Partner with us</Link>
+                  className={active.partner? "active": "" }>Contact us</Link>
               </li>
             </div>
             <div className="nav-icons">
-              <li className="nav-icon">
+              {/* <li className="nav-icon">
                 <Link to='/favorite' onClick={() => {setActive(prev => {return {meal: false, grocery: false, bakery: false, partner: false}})}}><span className="material-icons">favorite</span></Link>
-              </li>
-              <li className="nav-icon">
+              </li> */}
+              {/* <li className="nav-icon">
                 <span className="material-icons" onClick={() => setNotifications(!notifications)}>notifications</span>
                 <div className='counter'>2</div>
                 <div className={notifications?"nav-notifications":"invisible"}>
@@ -56,9 +57,10 @@ function NavBar() {
                     <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, nesciunt.</li><hr/>
                   </ul>
                 </div>
-              </li>
+              </li> */}
               <li className="nav-icon">
                 <Link to='/cart' onClick={() => {setActive(prev => {return {meal: false, grocery: false, bakery: false, partner: false}})}}><span className="material-icons">shopping_cart</span></Link>
+                <div className='counter'>{props.cartSize}</div>
               </li>
               <li className="nav-icon">
                 <Link to='/account' onClick={() => {setActive(prev => {return {meal: false, grocery: false, bakery: false, partner: false}})}}><span className="material-icons">face</span></Link>

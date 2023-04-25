@@ -7,7 +7,6 @@ import kanha from "../images/kanha.png"
 import mcd from "../images/mcd.png"
 import bs from "../images/bs.png"
 import behroz from "../images/behroz.jpg"
-import Footer from '../footer/Footer'
 import { Link } from 'react-router-dom'
 
 

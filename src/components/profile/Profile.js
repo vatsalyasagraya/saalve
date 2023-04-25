@@ -1,7 +1,6 @@
 import React from 'react';
 import profilec from '../images/profile.png';
 import './profile.css'
-import Footer from '../footer/Footer';
 
 function Profile() {
   return (

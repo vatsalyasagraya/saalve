@@ -1,33 +1,27 @@
 import React from 'react'
-import image1 from "./2.jpg"
 import "./cartcard.css"
-function CartCard() {
+function CartCard({name,image,price,location,quantity,handleAddCartItem,handleDeleteCartItem,handleDecreaseCartItem}) {
+  // console.log(price);
   return (
     <>
     <div className="cart-card">
-      <img src={image1}alt="" />
+      <img src={image}alt="" />
       <div className='card-text'>
         <div className="card-heading">
-            <h3>Lorem ipsum dolor sit amet.</h3>
-            <h3>$129</h3>
+            <h3>{name}</h3>
+            <h3>&#x20B9; {quantity*price}</h3>
         </div>
         <div className="cart-more-text">
-            <span>In Stock</span><br />
-            <span>Lorem, ipsum dolor.</span>
+            <span>{location}</span>
         </div>
         <div className="cart-qty">
-          <select name="Qty: ">
-            <option value="" disabled selected>Qty</option>
-            <option value="">1</option>
-            <option value="">2</option>
-            <option value="">3</option>
-          </select>
+          <button onClick={()=>handleDecreaseCartItem(name)}>-</button>
+            {quantity}
+          <button onClick={() => handleAddCartItem({name:name})}>+</button>
           <hr />
-          <a href="#">Delete</a>
-          <hr />
-          <a href="#">Like</a>
-          <hr />
-          <a href="#">Share</a>
+          <a onClick={()=>handleDeleteCartItem(name)}>Delete</a>
+          {/* <hr /> */}
+          {/* <a href="#">Share</a> */}
         </div>
       </div>
     </div>

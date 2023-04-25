@@ -34,3 +34,6 @@
 .food-cart .cart-order button:hover{
     background-color: rgb(2, 147, 2);
 }
+.food-cart a{
+    cursor: pointer;
+}
