@@ -56,6 +56,7 @@ function Bill(props) {
                 <p><span>Order-ID: </span> {props.orderId}</p>
                 <p><span>Status: </span> To be paid</p>
                 <p><span>Date: </span> {currentDate}</p>
+                {/* <p><span>Date: </span> {currentDate}</p> */}
                 <p>Collect your order from <span>{props.address} </span></p>
             </div>
             <div className="item">
