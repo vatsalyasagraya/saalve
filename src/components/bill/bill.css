@@ -198,16 +198,26 @@
     width: 100%;
     margin-bottom: 20px;
 }
-.full-bill .right-bill .place-order button{
-    width: 100%;
-    background-color: var(--main-color);;
+.downloadall{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 8rem 5rem 0;
+}
+.downloadall button{
+    background-color: var(--main-color);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    padding: 10px 30px;
     color: white;
-    font-size: 1.23rem;
-    letter-spacing: 1px;
-    padding: 10px;
-    border-radius: 20px;
-    border: 2px none;
     cursor: pointer;
-
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    
+}
+.downloadall button:hover{
+    background-color: rgb(2, 147, 2);
 }
 

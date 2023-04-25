@@ -1,12 +1,17 @@
 import React from 'react';
-import img1 from '../images/bs.png';
-import { useEffect } from 'react';
-import thali_datas from '../../Thali_data.js';
-import grocery_datas from '../../Grocery_data.js';
+import { useEffect,useRef } from 'react';
+// import thali_datas from '../../Thali_data.js';
+// import grocery_datas from '../../Grocery_data.js';
 import './bill.css';
-import { useParams } from 'react-router-dom';
+// import { useParams } from 'react-router-dom';
+import { useReactToPrint } from 'react-to-print';
 
 function Bill(props) {
+    const componentRef = useRef();
+    const handlePrint = useReactToPrint({
+        content: () => componentRef.current,
+      });
+      //////////////////////////////////
     useEffect(() => {
         window.scrollTo({
           top: 0,
@@ -24,10 +29,10 @@ function Bill(props) {
     const tax=0.05*totalPrice;
   return (
     <>
-    <div className="full-bill">
+    <div className="full-bill" ref={componentRef}>
         <div className="left-bill">
             <div className="left-top">
-                <h3>SAALVE, Thanks you for ordering!</h3>
+                <h3>SAALVE, Thank you for ordering!</h3>
             </div>
             <div className="item-pic">
                 <img src={props.image} alt="Not found" />
@@ -48,9 +53,10 @@ function Bill(props) {
                 <p>We Promise to make you food deliciousand healthy.</p>
             </div>
             <div className="order-stats">
-                <p><span>Order: </span>{Math.floor((Math.random() * 1000000) + 1)}</p>
-                <p><span>Status: </span>To be paid</p>
-                <p><span>Date: </span>{currentDate}</p>
+                <p><span>Order-ID: </span> {props.orderId}</p>
+                <p><span>Status: </span> To be paid</p>
+                <p><span>Date: </span> {currentDate}</p>
+                <p>Collect your order from <span>{props.address} </span></p>
             </div>
             <div className="item">
                 <div className="ty1">
@@ -91,9 +97,8 @@ function Bill(props) {
                 <p>If you need any help, don't hesitate to send us your feedback at <a href="mailto:info@saalve.in" target="_newtab" style={{ color:"var(--main-color)"}}>info@saalve.in</a>. </p>
             </div>
             <div className="download">
-                <button>Download</button>
+                <button onClick={handlePrint}>Download</button>
             </div>
-
         </div>
     </div>
 

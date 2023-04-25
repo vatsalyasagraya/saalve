@@ -28,6 +28,12 @@ import Termscodn from "./components/Polices/Termscond";
 // import SignInPage from './components/login/signup'
 
 function App() {  
+  ///////////////////////////////////
+  const generateOrderId = () => {
+    const timestamp = Date.now().toString();
+    return timestamp;
+  };
+  ////////////////////////////////////
   const [cartItems, setCartItems] = useState(() => {
     const storedCartItems = localStorage.getItem('cartItems');
     return storedCartItems ? JSON.parse(storedCartItems) : [];
@@ -40,10 +46,10 @@ function App() {
       setCartItems(updatedCartItems);
       localStorage.setItem('cartItems', JSON.stringify(updatedCartItems));
     } else {
-      const updatedCartItems = [...cartItems,{  name, image, location, price, quantity: 1 }];
+      const updatedCartItems = [...cartItems,{  name, image, location, price, quantity: 1, orderId: generateOrderId()}];
       setCartItems([
         ...cartItems,
-        {  name, image, location, price, quantity: 1 },
+        {  name, image, location, price, quantity: 1,orderId: generateOrderId() },
       ]);
       localStorage.setItem('cartItems', JSON.stringify(updatedCartItems));
     }
