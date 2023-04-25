@@ -11,8 +11,8 @@ const thali_datas = [
       time: "9:00p.m. to 11:00p.m.",
       dis: "12km",
       date: currentDate,
-      money: 190,
-      money_cut: 1.7*190,
+      money: 99,
+      money_cut: 225,
       closes: 30
     },
     {
@@ -25,8 +25,8 @@ const thali_datas = [
       time: "9:00p.m. to 11:00p.m.",
       dis: "12km",
       date: currentDate,
-      money: 225,
-      money_cut: 1.7*225,
+      money: 79,
+      money_cut: 190,
       closes: 30
     },
     {
@@ -39,8 +39,8 @@ const thali_datas = [
       time: "9:00p.m. to 11:00p.m.",
       dis: "12km",
       date: currentDate,
-      money: 190,
-      money_cut: 1.7*190,
+      money: 99,
+      money_cut: 225,
       closes: 30
     },
     {
@@ -53,8 +53,8 @@ const thali_datas = [
       time: "9:00p.m. to 11:00p.m.",
       dis: "12km",
       date: currentDate,
-      money: 225,
-      money_cut: 1.7*225,
+      money: 79,
+      money_cut: 190,
       closes: 30
     },
     // {
