@@ -8,6 +8,7 @@ import mcd from "../images/mcd.png"
 import bs from "../images/bs.png"
 import behroz from "../images/behroz.jpg"
 import { Link } from 'react-router-dom'
+import About from '../Polices/About'
 
 
 function Home() {
@@ -44,13 +45,14 @@ function Home() {
             <button className='pre-home-btn' onClick={prev}><span className="material-icons">navigate_before</span></button>
             <button className='next-home-btn'onClick={next}><span className="material-icons">navigate_next</span></button>
         </div>
-        <div className="logos">
+        {/* <div className="logos">
             <img src={kanha} alt="kanha" />
             <img src={bs} alt="bs" />
             <img src={mcd} alt="McD" />
-            <img src={behroz} alt="behroz" />
-        <Link to='/meal' className='home-link'>Explore More</Link>
-        </div>
+            <img src={behroz} alt="behroz" /> */}
+        {/* </div> */}
+        {/* <Link to='/meal' className='home-link'>Explore More</Link> */}
+        <About/>
 
         </>
     )

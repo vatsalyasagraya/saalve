@@ -24,7 +24,7 @@ export default function Meal() {
   return (
     <>
       {/* <Search/> */}
-      <h2 className='meal-heading'>Surprise Thali in Jaipur</h2>
+      <h2 className='meal-heading'>Surprise Thali</h2>
       <div className="meal">
         <div className='meal-grid'>
         {thali_datas.map(createcard)}
