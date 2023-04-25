@@ -68,6 +68,21 @@
 .leftsec .order button:hover,.button:hover{
     background-color: rgb(2, 147, 2);
 }
+.leftsec .addtocart{
+    background-color: var(--main-color);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    padding: 10px 30px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+}
+.leftsec .addtocart:hover{
+    background-color: rgb(2, 147, 2);
+}
 .alert {
     background-color: #f2f2f2;
     border: 1px solid #ddd;

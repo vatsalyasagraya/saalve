@@ -16,6 +16,7 @@ import Account from "./components/account/Account";
 import FoodComp from "./components/foodcomp/FoodComp";
 import Carousel from "./components/carousel/Carousel";
 import LoggIn from "./components/login/loggin";
+import SignInPage from "./components/login/signup";
 import Home from "./components/home/Home";
 import Profile from "./components/profile/Profile"
 import Footer from "./components/footer/Footer";
@@ -28,6 +29,18 @@ import Termscodn from "./components/Polices/Termscond";
 // import SignInPage from './components/login/signup'
 
 function App() {  
+
+  const logginn = localStorage.getItem('Isloggedin-id');
+  console.log(logginn);
+
+
+
+
+
+
+
+  ////////////////////////////////////
+  /////////////////////////////////////
   ///////////////////////////////////
   const generateOrderId = () => {
     const timestamp = Date.now().toString();
@@ -82,9 +95,12 @@ function App() {
   return (
     <>
     <Router>  
-        <NavBar cartSize={cartItems.length} />
+        <NavBar cartSize={cartItems.length} loginVar={logginn} />
         {/* <SignInPage/> */}
         <Routes>
+          <Route exact path="/" element={<Home/>}/>
+          <Route exact path="/login" element={<SignInPage/>}/>
+          <Route exact path="/signinpage" element={<LoggIn/>}/>
           <Route exact path="/" element={<Home/>}/>
           <Route exact path="meal" element={<Meal/>}>
             <Route exact path="food-component" element={<FoodComp/>}/>  
@@ -93,13 +109,13 @@ function App() {
           <Route exact path="bakery" element={<Bakery/>}/>
           <Route exact path="contactus" element={<NewsLetter/>}/>
           <Route exact path="favorite" element={<Favorite/>}/>
-          <Route exact path="cart" element={<Cart cartItems={cartItems} handleAddCartItem={handleAddCartItem} handleDecreaseCartItem={handleDecreaseCartItem} handleDeleteCartItem={handleDeleteCartItem} handleDeleteAllCart={handleDeleteAllCart}/>}/>
+          <Route exact path="cart" element={(logginn)?<Cart cartItems={cartItems} handleAddCartItem={handleAddCartItem} handleDecreaseCartItem={handleDecreaseCartItem} handleDeleteCartItem={handleDeleteCartItem} handleDeleteAllCart={handleDeleteAllCart}/>:<SignInPage/>}/>
           <Route exact path="account" element={<Profile/>}/>
           <Route exact path="privacypolicy" element={<Privacy/>}/>
           <Route exact path="aboutus" element={<About/>}/>
           <Route exact path="termsandconditions" element={<Termscodn/>}/>
           <Route exact path="bill" element={<MainBill cartItems={cartItems}/>}/>
-          <Route path="food-component/:type/:index" element={<FoodComp handleAddCartItem={handleAddCartItem}/>}/>
+          <Route path="food-component/:type/:index" element={<FoodComp loginVar={logginn} handleAddCartItem={handleAddCartItem}/>}/>
         </Routes>
         <Footer/>
       </Router>

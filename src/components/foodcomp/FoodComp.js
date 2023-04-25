@@ -9,7 +9,7 @@ import grocery_datas from '../../Grocery_data.js';
 import { Link } from 'react-router-dom';
 
 
-function FoodComp({handleAddCartItem}) {
+function FoodComp({handleAddCartItem,loginVar}) {
     useEffect(() => {
         window.scrollTo({
           top: 0,
@@ -94,9 +94,11 @@ function FoodComp({handleAddCartItem}) {
                             {/* <div  className={fav} ><span onClick={handleLike} className="material-icons">{fav}</span></div> */}
                         </div>  
                         <div className="order">
-                            <button onClick={() => {handleAddCartItem({product:"thali",name:(type==="thali")?thali_datas[index].name:grocery_datas[index].name,image:(type==="thali")?thali_datas[index].img:grocery_datas[index].img,dis:(type==="thali")?thali_datas[index].dis:grocery_datas[index].dis, price:(type==="thali")?thali_datas[index].money:grocery_datas[index].money, location:(type==="thali")?thali_datas[index].location:grocery_datas[index].location});
+
+                            {loginVar?
+                                <button onClick={() => {handleAddCartItem({product:"thali",name:(type==="thali")?thali_datas[index].name:grocery_datas[index].name,image:(type==="thali")?thali_datas[index].img:grocery_datas[index].img,dis:(type==="thali")?thali_datas[index].dis:grocery_datas[index].dis, price:(type==="thali")?thali_datas[index].money:grocery_datas[index].money, location:(type==="thali")?thali_datas[index].location:grocery_datas[index].location});
                             handleShowAlert("Item added to cart!");
-                            }}> Add to Cart</button>
+                            }}> Add to Cart</button>:<Link className="addtocart" to="/signinpage">Add to Cart</Link>}
                             {/* <Link className='button' to={{ pathname: "/your-bill/"+type+"/"+index }}> Order Now</Link> */}
                         </div>
                         <hr style={{marginTop: "10px", marginBottom: "10px" }}/>                        

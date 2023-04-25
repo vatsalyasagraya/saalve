@@ -1,10 +1,18 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import "./cart.css"
 import CartCard from './cart-card/CartCard'
 import Search from '../search/Search'
 import { Link } from 'react-router-dom';
 
+
 export default function Cart({cartItems,handleDeleteAllCart,handleAddCartItem,handleDeleteCartItem,handleDecreaseCartItem}) {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }, []);
+  const orderItems=cartItems;
   var money=0;
   function createCartCard(datas){
     money+=datas.price*datas.quantity;
@@ -24,10 +32,10 @@ export default function Cart({cartItems,handleDeleteAllCart,handleAddCartItem,ha
           <span class Name='cart-price'>Price</span>
         </div>
         <hr />
-        {cartItems.map(createCartCard)}
+        {orderItems.map(createCartCard)}
         {cartItems.length===0?<div style={{margin:"2rem 0rem", fontSize:"1.3rem"}}>Add Items to the cart</div>:
         <div className="cart-order">
-        <Link className='button' to="/bill" style={{color:"white",paddingTop:"10px"}}>Proceed to Buy</Link>
+        <Link className='button' to="/bill" style={{color:"white",paddingTop:"10px"}} >Proceed to Buy</Link>
           <div><h4 className='subtotal'>Tax (5%) :   &#x20B9; {0.05*money}</h4>
           <h3 className='subtotal'>Subtotal :   &#x20B9; {1.05*money}</h3>
         </div>

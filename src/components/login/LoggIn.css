@@ -1,8 +1,5 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-section{
+
+.login{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,4 +66,28 @@ section{
     margin: 10px;
     font-size: 1.5em;
     /* border: 1px solid black; */
+}
+.form-button button:disabled{
+    background-color: grey !important;
+}
+.register-form .downn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.register-form .downn p{
+    margin-left: 22px;
+    text-decoration: none;
+    margin-top: 10px;
+    color: white;
+    outline: none;
+    border: none;
+    text-decoration: inherit;
+}
+
+.errorr{
+    font-weight: bold;
+    font-size: 0.89rem;
+    color: red;
+    text-align: center ;
 }

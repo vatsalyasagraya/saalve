@@ -57,13 +57,19 @@ function NavBar(props) {
                   </ul>
                 </div>
               </li> */}
-              <li className="nav-icon">
+              
+                {(!props.loginVar)?
+                <div>
+                  <button><Link to="/signinpage">Sign-up</Link></button>
+                  <button><Link to="/login">Log-in</Link></button>
+                </div>:
+               <> <li className="nav-icon">
                 <Link to='/cart' onClick={() => {setActive(prev => {return {meal: false, grocery: false, bakery: false, partner: false}})}}><span className="material-icons">shopping_cart</span></Link>
                 <div className='counter'>{props.cartSize}</div>
               </li>
               <li className="nav-icon">
                 <Link to='/account' onClick={() => {setActive(prev => {return {meal: false, grocery: false, bakery: false, partner: false}})}}><span className="material-icons">face</span></Link>
-              </li>
+              </li></>}
             </div>
         </ul>
       </nav>

@@ -1,12 +1,10 @@
-/***    General     ***/
-* {
+.sign-up{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif
 }
-
-body {
+.sign-up {
     margin: 0 auto;
     background-image: url('../images/back.jpg');
     background-repeat: no-repeat;
@@ -30,9 +28,10 @@ body {
     text-transform: capitalize
 }
 
-h3 {
+.sign-up h3 {
     font-weight: 300;
     font-size: 2.1rem;
+    margin-bottom: 20px;
 }
 
 .sing-up form {
@@ -45,12 +44,11 @@ h3 {
     height: 250px;
 }
 
-form p{
+.dd  p{
     margin-bottom: 22px;
 }
 
-
-form label {
+.dd label {
     float: left;
     font-size: .9rem;
     margin: 0;
@@ -85,12 +83,23 @@ form label {
     background: #333;
     transition: all .5s
 }
-footer{
+.sign-up footer{
     display: flex;
     flex-direction: column;
 }
-footer p {
+.sign-up footer p {
     margin: 0;
     font-size: .9rem
+}
+
+.errorr{
+    font-weight: bold;
+    font-size: 0.89rem;
+    color: red;
+    text-align: center ;
+}
+
+.loginnn button:disabled{
+    background-color: grey !important;
 }
 
