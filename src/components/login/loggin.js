@@ -153,12 +153,12 @@ function loggin() {
                                 <b className='errorr' style={{marginLeft:"1rem"}}>{errormsg}</b>
                         </div>
                     </div>
-                    <div className="signup-image">
+                    {/* <div className="signup-image">
                         <figure>
                             <img src={signpic} alt="Broken" width="300px" />
                         </figure>
-                        {/* <Navlink to='/login' className"Sign""></Navlink> */}
-                    </div>
+                        <Navlink to='/login' className"Sign""></Navlink>
+                    </div> */}
                 </div>
             </div>
         </section>
