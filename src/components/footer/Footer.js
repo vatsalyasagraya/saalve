@@ -13,8 +13,8 @@ function Footer() {
         <div className="col">
             <img  className="logo" src={logo }alt="" />
             <h4>Contact</h4>
-            <p><strong>Address:</strong>382/204,saidulajab, near panchayat ghr,New Delhi - 30</p>
-            <p><strong>Working Hours:</strong>10:00 A.M. - 8 P.M.</p>
+            <p><strong>Address: </strong>382/204, Saidulajab, Near Panchayat Ghar, New Delhi-30</p>
+            <p><strong>Working Hours: </strong>10:00 A.M. - 8 P.M.</p>
             <div className="follow">
                 <h4>Follow Us</h4>
                 <div className="icon">
