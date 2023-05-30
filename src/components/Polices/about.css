@@ -1,6 +1,7 @@
 .aboutus {
     text-align: center;
 }
+<<<<<<< HEAD
 
 .about {
     padding: 2rem 1rem;
@@ -17,6 +18,18 @@
 }
 
 .about hr {
+=======
+.about{
+    
+    padding: 2rem 1rem;
+    background-color: rgb(255, 255, 255);
+}
+.aboutus h1{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.aboutus hr{
+>>>>>>> a7b97647b0369befd4b9a5d81260b1fb3279797e
     background-color: #4DA943;
     width: 5%;
     height: 0.3rem;
@@ -24,13 +37,21 @@
     position: absolute;
     left: 47.5%;
     margin-top: 1rem;
+<<<<<<< HEAD
 }
 .body {
     /* height: 90vh; */
+=======
+} 
+.aboutus .body{
+>>>>>>> a7b97647b0369befd4b9a5d81260b1fb3279797e
     display: flex;
+    justify-content: space-between;
+    height: 70vh;
     align-items: center;
     position: relative;
 }
+<<<<<<< HEAD
 .about .photo {
     width: 28%;
     height: 35%;
@@ -39,12 +60,23 @@
 }
 
 .about .text {
+=======
+
+.aboutus .photo{
+    max-width: 25%;
+    min-width: 200px;
+    margin: 6%;
+    border-radius: 100%;
+}
+.aboutus .text {
+>>>>>>> a7b97647b0369befd4b9a5d81260b1fb3279797e
     width: 70%;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding: 35px;
     padding-left: 50px;
     font-weight: 400;
 }
+<<<<<<< HEAD
 
 
 @media screen and (max-width: 576px) {
@@ -102,6 +134,26 @@
 
 .problem .box1 {
     width: 50%;
+=======
+.problem{
+    padding: 3rem 1rem;
+    background-color: rgb(244, 244, 244);
+}
+
+.problem .box{
+    display: flex;
+    justify-content: space-between;
+    height: 90vh;
+    margin-top:3rem ;
+    align-items: center;
+}
+.problem .ind{
+    width: 50%;
+    height: 50% ;
+}
+.problem .box1{
+    width: 70%;
+>>>>>>> a7b97647b0369befd4b9a5d81260b1fb3279797e
     padding-left: 7%;
 }
 
@@ -125,7 +177,13 @@
     font-size: 1.2rem;
     font-weight: 300;
 }
+.solution{
+    padding: 5rem 1rem;
+    background-color: rgb(255, 255, 255);
+    height: 70vh;
+}
 
+<<<<<<< HEAD
 @media screen and (max-width: 576px) {
     .problem .box1 {
         display: block;
@@ -214,4 +272,55 @@
     font-size: 1rem;
     }
     
+=======
+@media (max-width:800px){
+    .aboutus .body{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: 65vh;
+        align-items: center;
+    }
+    .aboutus .photo{
+        max-width: 25%;
+        min-width: 180px;
+        margin-top: 2rem;
+        border-radius: 100%;
+    }
+    .aboutus .text {
+        width: 70%;
+        font-size: 1rem;
+        padding:0;
+        font-weight: 400;
+    }
+    .aboutus h1{
+        font-size: 1.8rem;
+    }
+    .problem .box{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: 45vh;
+        margin-top: 1rem;
+        align-items: center;
+    }
+    .problem .para
+    {
+        color: rgb(86, 86, 86);
+        font-size: 1rem;
+        font-weight: 300;
+    }
+    .problem .box1 span{
+        font-size: 1.2rem;
+        font-weight: 100;
+        color: black;
+    }
+    .problem .ind{
+        display: none;
+    }
+    .problem .box1{
+        width: 80%;
+        padding-left: 0;
+    }
+>>>>>>> a7b97647b0369befd4b9a5d81260b1fb3279797e
 }

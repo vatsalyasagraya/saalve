@@ -6,6 +6,7 @@
     width: 100%;
     height: 3.75rem;
     box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.5);
+    z-index: 100;
 }
 .nav ul{
     list-style: none;
@@ -122,21 +123,22 @@
     display: none;
 }
 .nav .signin a{
-    background-color: var(--main-font-color);
-    padding: 10px 30px;
-    margin: 1rem;
-    cursor: pointer;
+    padding: 0;
+    margin: 0.5rem;
     border: none;
-    border-radius: 2px;
-    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5); 
+    box-shadow:none; 
     text-decoration: none;
-    color: var(--main-color);
+    color: var(--main-font-color);
+    position: relative;
+    top: 0.1rem;
+    font-weight: 500;
+    right: 0.5rem;
     
 }
 .nav .signin a:hover{
     background-color: rgb(232, 232, 232)
 }
-@media screen and (width<=600px) {
+@media (width<=800px) {
     .nav{
         font-family: 'Montserrat', sans-serif;
         display: block;
@@ -171,6 +173,7 @@
     .nav-logo{
         position: absolute;
         left: 0;
+        top: 0.25rem;
         font-size: 1.4rem;
     }
     .nav-menu a{
@@ -190,7 +193,7 @@
         top: 3.8rem;
         float: right;
         width: 9rem;
-        height: 9.7rem;
+        height: 9rem;
         margin-right: 0rem;
         background-color: var(--main-color);
     }
@@ -216,6 +219,24 @@
         display: none;
     }
     .nav-icons{
+        margin-right: 1.2rem;
+    }
+    .nav .signin a{
+        background-color: transparent;
+        padding: 0;
+        margin: 0.5rem;
+        border: none;
+        box-shadow:none; 
+        text-decoration: none;
+        color: var(--main-font-color);
+        position: relative;
+        top: 0.2rem;
+        right: 0.5rem;        
+    }
+    .nav .signin a:hover{
+        background-color: transparent;
+    }
+    .invi_small{
         display: none;
     }
   }

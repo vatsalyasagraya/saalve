@@ -30,7 +30,7 @@ export default function MyCard(props) {
         </div>
         <div className="card-top4">
           <div className="pickup"><span className='material-icons'>event_available</span><span className='span1'>{props.date}</span></div>
-          <div className="price"><span className='span0'>&#x20B9; {props.money}<del style={{marginLeft:"4px"}}>&#x20B9;{props.money_cut}</del></span><span className='material-icons'>payments</span></div>
+          <div className="star"><span className='span0'>&#x20B9; {props.money}<del style={{marginLeft:"4px"}}>&#x20B9;{props.money_cut}</del></span><span className='material-icons'>payments</span></div>
         </div> 
       </div>
     </div>
