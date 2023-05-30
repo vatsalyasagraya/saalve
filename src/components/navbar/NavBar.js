@@ -40,6 +40,9 @@ function NavBar(props) {
                   onClick={() => {setActive(prev => {return {meal: false, grocery: false, bakery: false, partner: true}});setToggle(!toggle)}} 
                   className={active.partner? "active": "" }>Contact us</Link>
               </li>
+              <li className="buttons">
+                <Link to='/account' onClick={() => {setActive(prev => {return {meal: false, grocery: false, bakery: false, partner: false}})}}>Account</Link>
+              </li>
             </div>
             <div className="nav-icons">
               {/* <li className="nav-icon">
@@ -67,7 +70,7 @@ function NavBar(props) {
                 <Link to='/cart' onClick={() => {setActive(prev => {return {meal: false, grocery: false, bakery: false, partner: false}})}}><span className="material-icons">shopping_cart</span></Link>
                 <div className='counter'>{props.cartSize}</div>
               </li>
-              <li className="nav-icon">
+              <li className="nav-icon invi_small">
                 <Link to='/account' onClick={() => {setActive(prev => {return {meal: false, grocery: false, bakery: false, partner: false}})}}><span className="material-icons">face</span></Link>
               </li></>}
             </div>

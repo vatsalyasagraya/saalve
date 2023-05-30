@@ -86,7 +86,7 @@ function FoodComp({handleAddCartItem,loginVar}) {
                         <hr style={{marginTop: "10px", marginBottom: "10px" }}/>
                         <div className="top-section">
                             <h3>Surprise Thali</h3>
-                            <div className="price"><span className='span0'>&#x20B9; {(type==="thali")?thali_datas[index].money:grocery_datas[index].money}<del style={{marginLeft:"4px"}}>&#x20B9;{(type==="thali")?thali_datas[index].money_cut:grocery_datas[index].money_cut}</del></span><span className='material-icons'>payments</span></div>
+                            <div className="star"><span className='span0'>&#x20B9; {(type==="thali")?thali_datas[index].money:grocery_datas[index].money}<del style={{marginLeft:"4px"}}>&#x20B9;{(type==="thali")?thali_datas[index].money_cut:grocery_datas[index].money_cut}</del></span><span className='material-icons'>payments</span></div>
                         </div> 
                         <div className="pickup-time">
                             <div className="pickup"><span className='material-icons'>schedule</span><span className='span1'>{(type==="thali")?thali_datas[index].time:grocery_datas[index].time}</span></div>
