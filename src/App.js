@@ -23,8 +23,6 @@ import Footer from "./components/footer/Footer";
 import NewsLetter from "./components/newsletter/NewsLetter";
 import Privacy from "./components/Polices/Privacy";
 import About from "./components/Polices/About";
-import Problem from "./components/Polices/Problem";
-import Solution from "./components/Polices/Solution";
 import Termscodn from "./components/Polices/Termscond";
 // import SignInPage from './components/login/signup'
 

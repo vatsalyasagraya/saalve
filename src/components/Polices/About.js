@@ -40,11 +40,9 @@ export const About = () => {
     <div id="Solution" className="solution">
       <h1>Solution</h1>
       <hr/>
-      <div className='first'>
-            <img src={img3} alt="nothin" className="photo-sol"/>
-            <div className="text-sol">
-                <p>Are you a business with surplus food? Join us to cut your food waste - all while finding new customers and saving sunk costs. We want India to think differently about throwing food.</p>
-            </div>
+      <div className='body'>
+            <img src={img3} alt="nothin" className="photo"/>
+            <p className="text">Are you a business with surplus food? Join us to cut your food waste - all while finding new customers and saving sunk costs. We want India to think differently about throwing food.</p>
         </div>
     </div>
     </div>
