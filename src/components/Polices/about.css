@@ -1,17 +1,22 @@
-.aboutus{
+.aboutus {
     text-align: center;
-    /* padding: 0 1rem; */
 }
-.about{
-    
+
+.about {
     padding: 2rem 1rem;
     background-color: rgb(255, 255, 255);
 }
-.aboutus h1{
+.about {
+        height: 100%;
+        background-color: rgb(255, 255, 255);
+    }
+
+.about h1 {
     font-size: 2rem;
     font-weight: 600;
 }
-.aboutus hr{
+
+.about hr {
     background-color: #4DA943;
     width: 5%;
     height: 0.3rem;
@@ -19,6 +24,9 @@
     position: absolute;
     left: 47.5%;
     margin-top: 1rem;
+}
+.body {
+    /* height: 90vh; */
 } 
 .aboutus .body{
     display: flex;
@@ -27,6 +35,14 @@
     align-items: center;
     position: relative;
 }
+.about .photo {
+    width: 28%;
+    height: 35%;
+    padding: 6%;
+    border-radius: 100%;
+}
+
+
 
 .aboutus .photo{
     max-width: 25%;
@@ -41,6 +57,63 @@
     padding-left: 50px;
     font-weight: 400;
 }
+
+
+@media screen and (max-width: 576px) {
+    .about {
+        height: 60%;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .about .photo {
+        display: none;
+    }
+
+    .about .text {
+        text-align: center;
+        justify-content: center;
+        width: 80%;
+        font-weight: 300;
+        padding: 35px;
+        font-size: 1rem;
+        /* margin: 45px; */
+    }
+
+
+
+}
+
+
+.problem {
+    padding: 5rem 1rem;
+    background-color: rgb(244, 244, 244);
+}
+
+.problem hr {
+    background-color: #4DA943;
+    width: 5%;
+    height: 0.3rem;
+    border-radius: 1rem;
+    position: absolute;
+    left: 47.5%;
+    margin-top: 1rem;
+}
+
+.problem .box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 0px;
+    margin: 5px 0px;
+}
+
+.problem .ind {
+    width: 60%;
+    height: 60%;
+}
+
+.problem .box1 {
+    width: 50%;
 .problem{
     padding: 3rem 1rem;
     background-color: rgb(244, 244, 244);
@@ -61,20 +134,23 @@
     width: 70%;
     padding-left: 7%;
 }
-.problem .box1 span{
+
+.problem .box1 span {
     font-size: 2.2rem;
     font-weight: 100;
     color: black;
 }
-.problem .box1 b{
+
+.problem .box1 b {
     color: #4DA943;
 }
-.problem .main{
+
+.problem .main {
     margin-bottom: 40px;
     /* padding-left: 40px; */
 }
-.problem .para
-{
+
+.problem .para {
     color: rgb(86, 86, 86);
     font-size: 1.2rem;
     font-weight: 300;
@@ -85,53 +161,92 @@
     height: 70vh;
 }
 
-@media (max-width:800px){
-    .aboutus .body{
-        display: flex;
+@media screen and (max-width: 576px) {
+    .problem .box1 {
+        display: block;
         justify-content: center;
-        flex-wrap: wrap;
-        height: 65vh;
-        align-items: center;
+        width: 100%;
+        /* height: 100vh; */
     }
-    .aboutus .photo{
-        max-width: 25%;
-        min-width: 180px;
-        margin-top: 2rem;
-        border-radius: 100%;
-    }
-    .aboutus .text {
-        width: 70%;
-        font-size: 1rem;
-        padding:0;
-        font-weight: 400;
-    }
-    .aboutus h1{
-        font-size: 1.8rem;
-    }
-    .problem .box{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        height: 45vh;
-        margin-top: 1rem;
-        align-items: center;
-    }
-    .problem .para
-    {
-        color: rgb(86, 86, 86);
-        font-size: 1rem;
-        font-weight: 300;
-    }
-    .problem .box1 span{
-        font-size: 1.2rem;
-        font-weight: 100;
-        color: black;
-    }
-    .problem .ind{
+
+    .problem .badi {
         display: none;
     }
-    .problem .box1{
-        width: 80%;
-        padding-left: 0;
+
+    .problem .box1 p span {
+        color: rgb(86, 86, 86);
+        font-size: 1.2rem;
+        font-weight: 300;
+
     }
+
+    .problem{
+        height: 50%;
+    }
+}
+@media screen and (min-width:577px) and (max-width: 768px){
+    .problem{
+        height: 100%;
+    }
+}
+@media screen and (min-width:767px) and (max-width: 980px){
+    .problem{
+        height: 100%;
+    }
+}
+.solution {
+    padding: 5rem 1rem;
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+}
+
+.solution h1 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.solution hr {
+    background-color: #4DA943;
+    width: 5%;
+    height: 0.3rem;
+    border-radius: 1rem;
+    position: absolute;
+    left: 47.5%;
+    margin-top: 1rem;
+}
+
+.solution .first {
+
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.solution .photo-sol {
+    width: 28%;
+    height: 70%;
+    padding: 6%;
+    border-radius: 100%;
+}
+
+.solution .text-sol {
+    width: 100%;
+    font-size: 1.4rem;
+    /* padding: 50px; */
+    padding-top: 50px;
+    font-weight: 200;
+}
+@media screen and (max-width: 576px) {
+    .solution .first{
+        display: block;
+        align-items: center;
+    }
+    .solution .photo-sol{
+        display: none;
+    }
+    .solution .text-sol {
+    /* width: 100%; */
+    font-size: 1rem;
+    }
+    
 }

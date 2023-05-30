@@ -11,7 +11,8 @@ import Grocery from "./components/grocery/Grocery";
 import Partner from "./components/partner/Partner";
 import Favorite from "./components/favorite/Favorite";
 import Cart from "./components/cart/Cart";
-import MainBill from "./components/bill/MainBill";
+// import MainBill from "./components/bill/MainBill";
+import MainBill from "./components/Bill/MainBill";
 import Account from "./components/account/Account";
 import FoodComp from "./components/foodcomp/FoodComp";
 import Carousel from "./components/carousel/Carousel";
@@ -30,10 +31,6 @@ function App() {
 
   const logginn = localStorage.getItem('Isloggedin-id');
   console.log(logginn);
-
-
-
-
 
 
 

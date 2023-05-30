@@ -37,3 +37,16 @@
 .food-cart a{
     cursor: pointer;
 }
+@media screen and (max-width:577px){
+    .food-cart .cart-order button{
+        padding: 4px ;
+        border-radius: 1px;
+    }
+    .food-cart .sub-total{
+        font-size: 1rem;
+    }
+    .cart-order{
+        display: block;
+    }
+    
+}
