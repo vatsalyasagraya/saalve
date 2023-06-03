@@ -36,6 +36,7 @@ export const About = () => {
             <img className="ind" src={img2} alt="alt" />
           </div>
         </div>
+<<<<<<< HEAD
     </div>
     <div id="Solution" className="solution">
       <h1>Solution</h1>
@@ -43,6 +44,18 @@ export const About = () => {
       <div className='body'>
             <img src={img3} alt="nothin" className="photo"/>
             <p className="text">Are you a business with surplus food? Join us to cut your food waste - all while finding new customers and saving sunk costs. We want India to think differently about throwing food.</p>
+=======
+      </div>
+      <div id="Solution" className="solution">
+        <h1>Solution</h1>
+        <hr />
+        <div className='first'>
+          <img src={img3} alt="nothin" className="photo-sol" />
+          <div className="text-sol">
+            <p>Are you a business with surplus food? Join us to cut your food waste - all while finding new customers and saving sunk costs. We want India to think differently about throwing food.</p>
+          </div>
+
+>>>>>>> d3d50525e2d3609ecbc61870d50e90d0eb0b929d
         </div>
       </div>
     </div>
