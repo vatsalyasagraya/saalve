@@ -111,6 +111,13 @@
     width: 60%;
     height: 60%;
 }
+<<<<<<< HEAD
+
+.problem .box1 {
+    width: 50%;
+}
+=======
+>>>>>>> d3d50525e2d3609ecbc61870d50e90d0eb0b929d
 .problem{
     padding: 3rem 1rem;
     background-color: rgb(244, 244, 244);
