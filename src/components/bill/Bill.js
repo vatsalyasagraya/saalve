@@ -26,7 +26,7 @@ function Bill(props) {
     const quantity=props.quantity;
     const price=props.price;
     const totalPrice=price*quantity;
-    const tax=0.05*totalPrice;
+    const tax=Math.round(0.05*totalPrice*100)/100;
   return (
     <>
     <div className="full-bill" ref={componentRef}>
