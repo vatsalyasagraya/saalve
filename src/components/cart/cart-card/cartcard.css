@@ -42,7 +42,7 @@
     background-color: rgb(2, 147, 2);
 }
 
-@media screen and (max-width:577px) {
+@media screen and (max-width:800px) {
     .cart-card {
         display: block;
     }
@@ -51,16 +51,9 @@
         display: none;
     }
 
-    .cart-qty button {
-        background-color: var(--main-color);
-        font-size: 0.5rem;
-        padding: 0px 5px;
-        border-radius: 1px;
-    }
-
     .cart-card .card-text .cart-more-text {
-        font-size: 1.1rem;
-        width: 70%;
+        font-size: 0.9rem;
+        margin: 0.8rem 0 1rem 0;
     }
 
 }

@@ -37,8 +37,8 @@ export default function Cart({ cartItems, handleDeleteAllCart, handleAddCartItem
             <div className="cart-order">
               <Link className='button' to="/bill" style={{ color: "white", paddingTop: "10px" }} >Proceed to Buy</Link>
               <div>
-                <h4 className='subtotal'>Tax (5%) :   &#x20B9; {0.05 * money}</h4>
-                <h3 className='subtotal'>Subtotal :   &#x20B9; {1.05 * money}</h3>
+                <h4 className='subtotal'>Tax (5%) :   &#x20B9; {Math.round(0.05 * money*100)/100}</h4>
+                <h3 className='subtotal'>Subtotal :   &#x20B9; {Math.round(1.05 * money*100)/100}</h3>
               </div>
             </div>
           }
