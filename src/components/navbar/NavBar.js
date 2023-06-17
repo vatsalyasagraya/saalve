@@ -41,7 +41,7 @@ function NavBar(props) {
                   className={active.partner? "active": "" }>Contact us</Link>
               </li>
               <li className="buttons">
-                <Link to='/account' onClick={() => {setActive(prev => {return {meal: false, grocery: false, bakery: false, partner: false}})}}>Account</Link>
+                <Link to='/account' onClick={() => {setActive(prev => {return {meal: false, grocery: false, bakery: false, partner: false}});setToggle(!toggle)}}>Account</Link>
               </li>
             </div>
             <div className="nav-icons">
