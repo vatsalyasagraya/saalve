@@ -24,7 +24,7 @@
 }
 .cart-qty button{
     background-color: var(--main-color);
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 0px 10px;
     color: white;
     cursor: pointer;

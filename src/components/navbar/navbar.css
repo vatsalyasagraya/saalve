@@ -135,9 +135,6 @@
     right: 0.5rem;
     
 }
-.nav .signin a:hover{
-    background-color: rgb(232, 232, 232)
-}
 @media (width<=800px) {
     .nav{
         font-family: 'Montserrat', sans-serif;
@@ -232,9 +229,6 @@
         position: relative;
         top: 0.2rem;
         right: 0.5rem;        
-    }
-    .nav .signin a:hover{
-        background-color: transparent;
     }
     .invi_small{
         display: none;
